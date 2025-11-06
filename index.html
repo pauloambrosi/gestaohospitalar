@@ -70,6 +70,24 @@
             }
         }
 
+        .blink-alert {
+            color: #ef4444;
+            /* vermelho do Tailwind: red-500 */
+            animation: blinkRed 1.2s ease-in-out infinite;
+        }
+
+        @keyframes blinkRed {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
         @keyframes pulse-slow {
 
             0%,
@@ -144,9 +162,7 @@
             box-shadow: 0 0 0 4px var(--primary-200);
         }
 
-        h2 {
-            color: var(--primary);
-        }
+
 
         .timeline-item[data-accent] .timeline-bullet {
             border-color: var(--accent);
@@ -173,8 +189,8 @@
             </p>
             <div class="mt-10 flex flex-wrap items-center gap-4" data-aos="fade-up" data-aos-delay="400">
                 <a href="#cta"
-                    class="rounded-xl bg-white text-slate-900 px-6 py-3 font-semibold hover:bg-white/90">Quero
-                    participar</a>
+                    class="rounded-xl bg-white text-slate-900 px-6 py-3 font-semibold hover:bg-white/90">Quero fazer
+                    parte do movimento</a>
 
             </div>
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="700">
@@ -190,21 +206,81 @@
         </div>
     </section>
 
+    <section id="certificacao" class="py-20 bg-slate-50">
+
+
+
+        <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-start">
+            <div data-aos="fade-right">
+
+                <img class="w-full rounded-2xl shadow-lg object-cover aspect-[4/3]"
+                    src="img/1762277304_39144988071.png" style=""
+                    alt="certificado placeholder" />
+
+            </div>
+
+            <div data-aos="fade-right">
+                <p
+                    class="text-center text-primary font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                    É agora!
+                </p>
+
+
+                <p class="text-slate-800 leading-relaxed mb-3">
+                    Quatro dias. Quatro temas. Uma experiência que vai mudar o seu olhar sobre gestão hospitalar.
+                </p>
+
+                <p class="text-slate-800 leading-relaxed mb-3">
+                    Cada encontro foi pensado para provocar, inspirar e preparar você para os novos desafios da área da
+                    saúde.
+                </p>
+
+                <p class="text-slate-800 leading-relaxed">
+                    Do digital à humanização, da liderança à prática real — tudo em uma jornada que une conhecimento,
+                    propósito e futuro.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+
     <!-- ESTRUTURA (Página 2) - Timeline animada que cresce no scroll -->
     <section id="estrutura" class="relative py-20">
         <div class="mx-auto max-w-7xl px-6">
-            <p class="text-center text-accent font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
-                    Venha participar de uma jornada transformadora!!!
-                </p>
+            <p
+                class="text-center text-accent font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                Venha participar de uma jornada transformadora!!!
+            </p><br>
+            <p
+                class="text-left text-primary font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                Confira a jornada:</p>
+
+
             <div class="max-w-2xl mb-12" data-aos="fade-right">
 
                 <!-- Novo subtítulo -->
-                
 
-                <h2 class="mt-4 text-3xl md:text-4xl inline-flex items-center font-bold gap-2">
-                    <i data-lucide="calendar" style="width: 50px; height: 85px"></i>
-                    Estrutura do Curso - 4 Semanas Transformadoras
-                </h2>
+
+
             </div>
             <div class="timeline" id="timeline-estrutura">
                 <div class="timeline-fill" id="timeline-estrutura-fill"></div>
@@ -213,84 +289,115 @@
                 <article class="timeline-item mb-10" data-aos="fade-up">
                     <div class="timeline-bullet"></div>
                     <h3 class="text-xl font-semibold">Dia 1 - Inovação na Saúde</h3>
-                    <p class="mt-2 text-slate-700">Tendências em inovação hospitalar, digitalização e telemedicina.
-                        Explore casos de sucesso e o impacto direto na gestão moderna.</p>
+                    <p class="mt-2 text-slate-700">Aprenda, conecte-se e transforme sua visão de gestão hospitalar em
+                        apenas quatro semanas.<br>
+                        Prepare-se para liderar o movimento que está reinventando o setor da saúde no Brasil.</p>
                 </article>
 
                 <!-- Dia 2 -->
                 <article class="timeline-item mb-10" data-accent data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-bullet"></div>
                     <h3 class="text-xl font-semibold">Dia 2 - Liderança Transformadora</h3>
-                    <p class="mt-2 text-slate-700">O papel do líder em equipes multidisciplinares, comunicação em crises
-                        e estratégias para inspirar e engajar equipes de saúde.</p>
+                    <p class="mt-2 text-slate-700">Aprenda a inspirar equipes multidisciplinares, engajar profissionais
+                        e conduzir times sob pressão — mesmo em contextos de crise.</p>
                 </article>
 
                 <!-- Dia 3 -->
                 <article class="timeline-item mb-10" data-aos="fade-up" data-aos-delay="400">
                     <div class="timeline-bullet"></div>
                     <h3 class="text-xl font-semibold">Dia 3 - Gestão de Pessoas</h3>
-                    <p class="mt-2 text-slate-700">Desafios únicos da gestão de equipes na saúde, motivação de talentos,
-                        resolução de conflitos e humanização do atendimento.</p>
+                    <p class="mt-2 text-slate-700">Desvende as chaves da motivação, da empatia e da humanização em
+                        ambientes complexos e desafiadores.</p>
                 </article>
 
                 <!-- Dia 4 -->
                 <article class="timeline-item" data-accent data-aos="fade-up" data-aos-delay="600">
                     <div class="timeline-bullet"></div>
                     <h3 class="text-xl font-semibold">Dia 4 - Mesa Redonda ao Vivo</h3>
-                    <p class="mt-2 text-slate-700">Encontro síncrono com debate entre profissionais de mercado e docente
-                        da instituição. Espaço para perguntas e ação comercial.</p>
+                    <p class="mt-2 text-slate-700">Participe de um debate com profissionais de mercado e docentes da
+                        instituição.<br>
+                        Troque experiências, tire dúvidas e veja na prática o que significa ser um gestor hospitalar do
+                        século XXI.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- DIFERENCIAIS (Página 3) -->
-    <section id="diferenciais" class="py-20 bg-slate-50">
-        <div class="mx-auto max-w-7xl px-6">
-            <div class="max-w-3xl mb-12" data-aos="fade-right">
-                <h2 class="mt-4 text-3xl md:text-4xl inline-flex items-center font-bold gap-2">
-                    <i data-lucide="sparkle" style="width: 50px;"></i> Diferenciais que Fazem a Diferença
-                </h2>
+
+    <section id="diferente" class="py-20  bg-slate-50">
+        <div class="mx-auto max-w-7xl px-6  items-center">
+
+            <div data-aos="fade-right">
+                <p
+                    class="text-center text-accent font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                    Por que este curso é diferente de tudo o que você já viu?
+                </p>
+                <div class="space-y-6 mt-8 text-slate-700">
+                    <div
+                        class="bg-white shadow-md rounded-2xl p-6 border-l-4 border-primary hover:border-accent transition-all duration-300">
+                        <h4 class="font-semibold text-primary mb-2">Pré-graduação com propósito</h4>
+                        <p class="text-justify">
+                            Um verdadeiro esquenta para sua jornada no ensino superior em Gestão Hospitalar.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-md rounded-2xl p-6 border-l-4 border-primary hover:border-accent transition-all duration-300">
+                        <h4 class="font-semibold text-primary mb-2">Aprendizado dinâmico</h4>
+                        <p class="text-justify">
+                            Conteúdos liberados semanalmente para manter seu ritmo e engajamento.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-md rounded-2xl p-6 border-l-4 border-primary hover:border-accent transition-all duration-300">
+                        <h4 class="font-semibold text-primary mb-2">Encontro final estratégico</h4>
+                        <p class="text-justify">
+                            Uma experiência ao vivo com profissionais do setor e docentes da instituição.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-md rounded-2xl p-6 border-l-4 border-primary hover:border-accent transition-all duration-300">
+                        <h4 class="font-semibold text-primary mb-2">Credibilidade real</h4>
+                        <p class="text-justify">
+                            Mentoria com quem vive a gestão hospitalar todos os dias.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="rounded-2xl p-6 bg-white border border-slate-200" data-aos="zoom-in" data-aos-delay="200">
-                    <h3 class="text-lg font-semibold">Identidade Clara</h3>
-                    <p class="mt-2 text-slate-700">Pré-graduação estruturada como verdadeiro esquenta para o curso
-                        superior em Gestão Hospitalar.</p>
-                </div>
-                <div class="rounded-2xl p-6 bg-white border border-slate-200" data-aos="zoom-in" data-aos-delay="400">
-                    <h3 class="text-lg font-semibold">Trilha Semanal</h3>
-                    <p class="mt-2 text-slate-700">Liberação gradual de conteúdo aumenta expectativa e mantém alto
-                        engajamento dos participantes.
-                    </p>
-                </div>
-                <div class="rounded-2xl p-6 bg-white border border-slate-200" data-aos="zoom-in" data-aos-delay="600">
-                    <h3 class="text-lg font-semibold">Encontro Final Estratégico</h3>
-                    <p class="mt-2 text-slate-700">Mesa redonda ao vivo com debate mediado e ação comercial direcionada
-                        para captação efetiva.</p>
-                    <p class="mt-2 text-slate-700">Credibilidade garantida: docentes convidados do mercado + professor
-                        da instituição trazem visão completa e prática.</p>
-                </div>
-            </div>
         </div>
     </section>
 
+
     <!-- CERTIFICAÇÃO (Página 4) -->
     <section id="certificacao" class="py-20">
-        <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-center">
-            <div data-aos="fade-right">
+        <div class="mx-auto max-w-7xl px-6  gap-10 items-center">
+            <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-start">
+                <div data-aos="fade-right">
+                    <p
+                        class="text-center text-accent font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                        Quem te acompanhará nesta jornada?
+                    </p>
 
-                <h2 class="mt-4 text-3xl md:text-4xl inline-flex items-center font-bold gap-2">
-                    <i data-lucide="award" style="width: 50px;"></i>xxxx
-                </h2>
-                <div class="container-prose mt-4 space-y-4">
-                    xxx<br>xxx<br>xxx<br>xxx<br>
+                    <p>Por trás de cada aula, estão profissionais que vivem o dia a dia da gestão hospitalar e acreditam
+                        na
+                        força da educação como ferramenta de transformação.</p>
+
+                    <p>
+                        Mais do que transmitir conhecimento, eles provocam reflexões, compartilham experiências reais e
+                        inspiram
+                        novos olhares sobre o futuro da saúde.</p>
                 </div>
-            </div>
-            <div data-aos="fade-left">
-                <img class="w-full rounded-2xl shadow-lg object-cover aspect-[4/3]" src="img/certificado.png"
-                    style="filter: blur(1px);" alt="certificado placeholder" />
+                <div data-aos="fade-right">
+
+                    <img class="w-full rounded-2xl shadow-lg object-cover aspect-[4/3]"
+                        src="img/af634c6c-ff54-4a20-9f43-9dbcf8125dcf.png" style=""
+                        alt="certificado placeholder" />
+
+                </div>
+
             </div>
         </div>
     </section>
@@ -300,12 +407,11 @@
     <section id="docentes" class="py-20 bg-slate-50">
         <div class="mx-auto max-w-7xl px-6">
 
-            <div class="max-w-2xl mb-12" data-aos="fade-right">
-                <h2 class="mt-4 text-3xl md:text-4xl inline-flex items-center font-bold gap-2">
-                    <i data-lucide="users-round" style="width: 50px;"></i> Docentes do curso
-                </h2>
-            </div>
-
+            <p
+                class="text-center text-accent font-semibold uppercase tracking-wide mb-3 text-lg md:text-xl animate-fadeIn">
+                Docentes da Jornada
+            </p>
+            <br><Br>
             <!-- Cards dos Professores -->
             <div class="grid gap-8 md:grid-cols-3" data-aos="fade-up">
                 <!-- Professor 1 -->
@@ -363,10 +469,14 @@
 
     <!-- CTA -->
     <section id="cta" class="py-24 bg-white text-center">
-        <h2 class="text-4xl font-bold text-slate-800 mb-4">Pronto para começar?</h2>
+        <h2 class="text-4xl font-bold text-slate-800 mb-4 blink-alert">Vagas Limitadas! Não Perca Esta Oportunidade</h2>
         <p class="text-lg text-slate-600 mb-8">Receba o link de inscrição assim que o curso for lançado.</p>
+        <p class="text-lg text-slate-600 mb-8">Garanta seu lugar na primeira turma do movimento que vai transformar a
+            gestão hospitalar.<br>
+            A pré-inscrição é gratuita — mas as vagas são limitadas!</p><br><Br>
         <button
-            class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition">Pré-cadastrar</button>
+            class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition">Quero
+            garantir minha vaga!</button>
     </section>
 
 
